@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import ChatBubble from './components/ChatBubble';
 
 function App() {
-  const socket = useMemo(() => io("http://localhost:3000/"), []);
+  const socket = useMemo(() => io("https://simple-chat-application-server.onrender.com/"), []);
 
   const [message, setMessage] = useState("");
   const [room, setRoom] = useState("");
